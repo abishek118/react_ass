@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+#root{
+  height: 100%;
+}
+.container{
+  height: 100%;
+  text-align: center;
+  border:solid rgb(24, 102, 112) 5px;
+  margin: 0px 470px;
+  padding: 20px 20px;
+}
+img{
+  border-radius: 10px;
+  height: 30vh;
+  width: 23vw;
+  margin-top: 15px;
+}
+h2,h3,p{
+
+  text-align: left;
+  margin-left: 25px;
+}
+h2{
+  font-size: 50px;
+  font: bolder;
+  color: rgb(18, 147, 228);
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+p{
+    color: grey;
+    margin-bottom: -18px;
+    font-weight: bolder;
+    margin-top: 15px;
+  }
+
