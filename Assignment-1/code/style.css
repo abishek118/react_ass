@@ -1,3 +1,4 @@
+
 #root{
     width: 100%;
     height: 100%;
@@ -6,27 +7,27 @@
 }
 .top{
     display: flex;
-    height: 34%;
-    width: 100vw;
-
+    height: 34vh;
+    width: 99vw;
 }
 .yellow{
-    width: 50vw;
-    height: 32vh;
+    width: 49.5vw;
+    height: 33vh;
     background-color: yellow;
+    
     margin: 10px;
 }
 .yellow:last-child{
     margin-right: 0;
 }
 .mid{
-    width: 100vw;
-    height: 34%;
+    width: 99vw;
+    height: 33vh;
    
 
 }
 .pink{
-    width: 100vw;
+    width: 98vw;
     height: 33vh;
     background-color: #FF3C69;
     margin: 10px;
@@ -35,7 +36,7 @@
 .bottom{
     display: flex;
     width: 100vw;
-    height: 34%;
+    height: 33vh;
 }
 .blue{
     width: 33vw;
@@ -44,11 +45,9 @@
     margin: 10px;
     
 }
-@media screen and (min-width:320px) and
-(max-width:767px){
+@media only screen and (max-width:320px) {
     .bottom{
         display:flex ;
-        width: 98vw;
         flex-direction: column;
         
     }
@@ -57,34 +56,33 @@
         height: 15vh;
         background-color: #6E7DFF;
         margin: 10px;
+        flex-direction:column;
     }
     #blocked{
         display: none;
     }
-}
-@media screen and (min-width:0px) and
-(max-width:320px){
     .top{
-        display:flex ;
-        width: 100vw;
+        display: flex;
         flex-direction: column;
-    } 
+    }
+    .yellow{
+        width: 99vw;
+        height: 15vh;
+    }
+    
+}
+@media screen and (max-width:768px) and (min-width:320px){
     .bottom{
         display:flex ;
-        width: 100vw;
+        
         flex-direction: column;
     } 
-    .yellow{
-        width: 100vw;
-        height: 15vh;
-        background-color: yellow;
-        margin: 10px;
-    }
     .blue{
-        width: 100vw;
+        width: 98vw;
         height: 15vh;
         background-color: #6E7DFF;
         margin: 10px;
+        
     }
     #blocked{
         display: none;
