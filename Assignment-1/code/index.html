@@ -14,8 +14,21 @@
     <div id="root"></div>
     <script type="text/babel">
 //React Code here
- ReactDOM.render(<div></div>,document.getElementById('root'));
-
+  ReactDOM.render(<div>
+    <div className="top">
+      <div className="yellow"></div>
+      <div className="yellow"></div>
+    </div>
+    <div className="mid">
+      <div className="pink"></div>
+    </div>
+    <div className="bottom">
+      <div className="blue"></div>
+      <div className="blue"></div>
+      <div className="blue" id="blocked"></div>
+    </div>
+  </div>, document.getElementById('root'));
+  
 </script>
 <!--
      Note: this page is a great way to try React but it's not suitable for production.
