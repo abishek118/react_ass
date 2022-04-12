@@ -1,14 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './index.css';
 import Postview from './Postview';
 import reportWebVitals from './reportWebVitals';
+import StartPage from './StartPage';
 
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Postview />
-  </React.StrictMode>,
+  <BrowserRouter>
+  <Routes>
+  <Route path="/" element={<StartPage/>}></Route>
+  <Route path="/post" element={<Postview />}></Route>
+  </Routes>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

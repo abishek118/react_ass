@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "data" : "json-server --watch Mock-data/data.json --port 3004"
+    "data2": "json-server --watch Mock-data/data.json --port 3004"
   },
   "eslintConfig": {
     "extends": [
@@ -37,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-router-dom": "^6.3.0"
   }
 }
